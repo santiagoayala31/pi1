@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CyberIntegrity — Proyectos</title>
+    <link rel="icon" href="assets/img/logo-cyberintegrity.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/main.js"></script>
+    <style>
+        /* Mini timeline si tu CSS no lo tiene */
+        .timeline { position: relative; margin-left: 18px; }
+        .timeline::before { content: ""; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--line, #1f2a35); }
+        .event { position: relative; margin: 16px 0 16px 16px; }
+        .event-dot { position: absolute; left: -6px; top: 14px; width: 12px; height: 12px; background: var(--primary, #2aa9ff); border-radius: 999px; box-shadow: 0 0 0 2px rgba(42,169,255,.15); }
+        .event-card { margin-left: 16px; }
+        .clean { margin: 6px 0 0; padding-left: 16px; }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="brand">
+            <img src="assets/img/logo-cyberintegrity.png" alt="logo">
+            <div>
+                <div class="t1">CyberIntegrity</div>
+                <div class="muted" style="font-size:12px">Gestión de Ciberseguridad</div>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="index.html" data-page="inicio">🏠 Inicio</a>
+            <a href="nosotros.html" data-page="nosotros">👥 Nosotros</a>
+            <a href="servicios.html" data-page="servicios">🧩 Servicios</a>
+            <a href="proyectos.html" data-page="proyectos" class="active">📌 Proyectos</a>
+            <a href="contacto.html" data-page="contacto">✉️ Contacto</a>
+        </div>
+        <div><span class="badge">Sin implementación</span></div>
+        <div class="footer-side">© 2025 CyberIntegrity</div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <h1 class="h1">Proyectos y Casos</h1>
+            <p class="muted">Algunos ejemplos de programas de gestión y verificación que ejecutamos.</p>
+
+            <!-- Timeline donde el JS inserta los eventos -->
+            <div id="projects-timeline" class="timeline">
+                <!-- JS inserta aquí -->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
